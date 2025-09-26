@@ -1,0 +1,143 @@
+/* Banner.css */
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.banner-background {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px 60px;
+  box-sizing: border-box;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+/* Градиентный слой — черный, от низа до середины, прозрачность убывает кверху */
+.gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%; /* Занимает нижнюю половину экрана */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  z-index: 1; /* Под текстом, но над фоном */
+}
+
+.banner-content {
+  max-width: 500px;
+  z-index: 2; /* Над градиентом */
+}
+
+.banner-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+  line-height: 1.2;
+}
+
+.banner-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+  opacity: 0.9;
+}
+
+.banner-meta {
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.banner-meta span:nth-child(2) {
+  color: #ccc;
+}
+
+.play-button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.play-button:hover {
+  background-color: #f0f0f0;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+  z-index: 3;
+}
+
+.nav-button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.nav-button.prev {
+  left: 20px;
+}
+
+.nav-button.next {
+  right: 20px;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+  .banner-background {
+    padding: 30px 20px;
+  }
+
+
+  .banner-title {
+    font-size: 2rem;
+  }
+
+  .banner-description {
+    font-size: 0.9rem;
+  }
+
+  .nav-button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .nav-button.prev {
+    left: 10px;
+  }
+
+  .nav-button.next {
+    right: 10px;
+  }
+
+  .gradient-overlay {
+    height: 60%; /* Можно немного увеличить на мобильных для лучшей читаемости */
+  }
+}
