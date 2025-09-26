@@ -1,0 +1,124 @@
+.footer {
+  background-color: #0A0A0A; /* Темно-черный фон */
+  color: white;
+  padding: 40px 60px 20px 60px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Логотип и кнопка */
+.footer-logo {
+  flex: 0 0 250px;
+  margin-right: 50px; 
+}
+
+.footer-logo h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  /* Градиент оранжевый → желтый */
+  background: linear-gradient(90deg, #FF8C00, #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 1px;
+}
+
+.join-button {
+  background-color: white;
+  color: #FF8C00; /* Оранжевый текст */
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.join-button:hover {
+  background-color: #f0f0f0;
+  color: #FF6B00;
+}
+
+/* Колонки */
+.footer-columns {
+  display: flex;
+  /* flex: 1; */
+  gap: 40px;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+}
+
+.footer-column {
+  flex: 1 1 200px;
+}
+
+.column-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #FFD700; /* Желтый заголовок */
+  letter-spacing: 0.5px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 8px;
+}
+
+.footer-column a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.footer-column a:hover {
+  color: #FFD700; /* Яркий желтый при наведении */
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-logo {
+    flex: 0 0 auto;
+  }
+
+  .footer-logo h1 {
+    font-size: 1.6rem;
+  }
+
+  .join-button {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+
+  .footer-columns {
+    gap: 20px;
+  }
+
+  .footer-column {
+    flex: 1 1 100%;
+  }
+
+  .column-title {
+    font-size: 1rem;
+  }
+}
