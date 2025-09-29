@@ -35,18 +35,6 @@
         "name": "Brennan Mejia",
         "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/r6gyUjal5YYTBgg2SRIb1Euh4TK.jpg"
       }
-    ],
-    "similarMovies": [
-      {
-        "id": 201,
-        "title": "The Last Stand",
-        "poster": "https://image.tmdb.org/t/p/w500/6Jp3rYkTjKqZ7h5V4Q9X8Y6Z2W1.jpg"
-      },
-      {
-        "id": 202,
-        "title": "Assassin's Bullet",
-        "poster": "https://image.tmdb.org/t/p/w500/7Kp3rYkTjKqZ7h5V4Q9X8Y6Z2W2.jpg"
-      }
     ]
   },
   {
@@ -66,31 +54,19 @@
     "writer": "Mark Fergus, Hawk Ostby, Art Marcum, Matt Holloway",
     "cast": [
       {
-        "id": 201,
+        "id": 2011,
         "name": "Robert Downey Jr.",
         "image": "https://image.tmdb.org/t/p/w100_and_h100_face/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg"
       },
       {
-        "id": 202,
+        "id": 2022,
         "name": "Gwyneth Paltrow",
         "image": "https://image.tmdb.org/t/p/w100_and_h100_face/7kRJtR2UQjJ6yq5q5q5q5q5q5q5.jpg"
       },
       {
-        "id": 203,
+        "id": 2033,
         "name": "Jeff Bridges",
         "image": "https://image.tmdb.org/t/p/w100_and_h100_face/8kRJtR2UQjJ6yq5q5q5q5q5q5q6.jpg"
-      }
-    ],
-    "similarMovies": [
-      {
-        "id": 301,
-        "title": "Iron Man 2",
-        "poster": "https://www.themoviedb.org/t/p/w500/6WBeq4fCd36OkevKzZG9m7p5q5q.jpg"
-      },
-      {
-        "id": 302,
-        "title": "The Avengers",
-        "poster": "https://www.themoviedb.org/t/p/w500/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg"
       }
     ]
   },
@@ -111,31 +87,19 @@
     "writer": "Gil Kenan, Jason Reitman",
     "cast": [
       {
-        "id": 301,
+        "id": 3011,
         "name": "Paul Rudd",
         "image": "https://image.tmdb.org/t/p/w100_and_h100_face/5YtYhO49MbCpYQO4yQvKQbOjK3Z.jpg"
       },
       {
-        "id": 302,
+        "id": 3022,
         "name": "Carrie Coon",
         "image": "https://image.tmdb.org/t/p/w100_and_h100_face/6YtYhO49MbCpYQO4yQvKQbOjK3Y.jpg"
       },
       {
-        "id": 303,
+        "id": 3033,
         "name": "Bill Murray",
         "image": "https://image.tmdb.org/t/p/w100_and_h100_face/7YtYhO49MbCpYQO4yQvKQbOjK3X.jpg"
-      }
-    ],
-    "similarMovies": [
-      {
-        "id": 401,
-        "title": "Ghostbusters: Afterlife",
-        "poster": "https://www.themoviedb.org/t/p/w500/7Rz5Qj7J6yq5q5q5q5q5q5q5q5q.jpg"
-      },
-      {
-        "id": 402,
-        "title": "Ghostbusters (1984)",
-        "poster": "https://www.themoviedb.org/t/p/w500/8Rz5Qj7J6yq5q5q5q5q5q5q5q5r.jpg"
       }
     ]
   }

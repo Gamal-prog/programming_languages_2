@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import './MovieDetail.css';
+import MovieCard from './MovieCard';
 
 import banners from '../data/banners.json';
 import topRatedMovies from '../data/topRatedMovies.json';
@@ -22,7 +23,6 @@ const MovieDetail = () => {
   }
 
   const cast = movie.cast || [];
-  const similarMovies = movie.similarMovies || [];
   const tagline = movie.tagline || '';
   const overview = movie.overview || movie.description || 'No overview available.';
   const duration = movie.duration || 'Unknown';
@@ -83,31 +83,11 @@ const MovieDetail = () => {
               <h3>Cast:</h3>
               <div className="cast-grid">
                 {cast.map((actor) => (
-                  <div key={actor.id || actor.name} className="cast-member">
-                    <img
-                      src={actor.image || "https://via.placeholder.com/100?text=N/A"}
-                      alt={actor.name}
-                      className="cast-avatar"
-                    />
-                    <p className="cast-name">{actor.name || 'Unknown'}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {similarMovies.length > 0 && (
-            <div className="similar-movies">
-              <h3>Similar Movies</h3>
-              <div className="similar-slider">
-                {similarMovies.map((item) => (
-                  <div key={item.id || item.title} className="similar-movie-card">
-                    <img
-                      src={item.poster || "https://via.placeholder.com/150x200?text=No+Poster"}
-                      alt={item.title}
-                    />
-                    <p>{item.title || 'Untitled'}</p>
-                  </div>
+                  <MovieCard
+                    key={actor.id || actor.name}
+                    movie={actor}
+                    isCast={true} 
+                  />
                 ))}
               </div>
             </div>

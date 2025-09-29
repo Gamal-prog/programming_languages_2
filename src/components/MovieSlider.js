@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './MovieSlider.css';
+import MovieCard from './MovieCard';
 
 const MovieSlider = ({ title, movies }) => {
   const navigate = useNavigate();
@@ -51,16 +52,11 @@ const MovieSlider = ({ title, movies }) => {
 
         <div className="movies-container" ref={sliderRef}>
           {movies.map((movie) => (
-            <div key={movie.id} className="movie-card" onClick={() => handleCardClick(movie.id)}>
-              <img src={movie.poster} alt={movie.title} className="movie-poster" />
-              <div className="movie-info">
-                <h3 className="movie-title">{truncateText(movie.title, 18)}</h3>
-                <div className="movie-meta">
-                  <span>{movie.releaseDate}</span>
-                  <span className="rating">Rating: {movie.rating}</span>
-                </div>
-              </div>
-            </div>
+            <MovieCard
+              key={movie.id}
+              movie={movie}
+              onClick={() => handleCardClick(movie.id)}
+            />
           ))}
         </div>
 
@@ -74,11 +70,6 @@ const MovieSlider = ({ title, movies }) => {
       </div>
     </div>
   );
-};
-
-const truncateText = (text, maxLength) => {
-  if (text.length <= maxLength) return text;
-  return text.slice(0, maxLength) + "...";
 };
 
 export default MovieSlider;
