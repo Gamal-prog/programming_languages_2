@@ -1,14 +1,21 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
+  const navigate = useNavigate();
+
+  const handleHomeClick = () => {
+    navigate('/');
+  }
+
   return (
     <header className="header">
       <div className="header-container">
 
         <div className="header-left"> 
-            <div className="logo">
-                <span>MOVIX</span>
+            <div className="logo" onClick={handleHomeClick}>
+              MOVIX
             </div>
 
             <nav className="nav-menu">

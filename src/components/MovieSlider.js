@@ -1,7 +1,9 @@
 import React, { useState, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './MovieSlider.css';
 
 const MovieSlider = ({ title, movies }) => {
+  const navigate = useNavigate();
   const sliderRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -30,6 +32,10 @@ const MovieSlider = ({ title, movies }) => {
     }
   };
 
+  const handleCardClick = (movieId) => {
+    navigate(`/movie/${movieId}`); 
+  };
+
   return (
     <div className="movie-slider">
       <h2 className="slider-title">{ title }</h2>
@@ -45,7 +51,7 @@ const MovieSlider = ({ title, movies }) => {
 
         <div className="movies-container" ref={sliderRef}>
           {movies.map((movie) => (
-            <div key={movie.id} className="movie-card">
+            <div key={movie.id} className="movie-card" onClick={() => handleCardClick(movie.id)}>
               <img src={movie.poster} alt={movie.title} className="movie-poster" />
               <div className="movie-info">
                 <h3 className="movie-title">{truncateText(movie.title, 18)}</h3>

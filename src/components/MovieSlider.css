@@ -56,11 +56,11 @@
   overflow-x: auto;
   padding: 10px 0;
   scroll-behavior: smooth;
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none; 
 }
 
 .movies-container::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Edge */
+  display: none; 
 }
 
 .movie-card {
@@ -70,6 +70,7 @@
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease;
+  cursor: pointer;
 }
 
 .movie-card:hover {

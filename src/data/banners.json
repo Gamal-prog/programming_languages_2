@@ -1,26 +1,142 @@
 [
-    {
-      "id": 1,
-      "title": "Corrective Measures",
-      "description": "Set in San Tiburon, the world's most dangerous maximum-security penitentiary and home to the world's most treacherous superpowered criminals, where tensions among the inmates and staff heighten, leading to anarchy that engulfs the prison and order is turned upside down.",
-      "rating": "5.3+",
-      "views": 8900,
-      "image": "https://image.tmdb.org/t/p/original/aHFq9NMhavOL0jtQvmHQ1c5e0ya.jpg"
-    },
-    {
-      "id": 2,
-      "title": "Iron Man",
-      "description": "Tony Stark. Genius, billionaire, playboy, philanthropist. After being held captive in an Afghan cave, Tony creates a unique suit of armor...",
-      "rating": "8.0+",
-      "views": 12300,
-      "image": "https://www.themoviedb.org/t/p/original/cyecB7godJ6kNHGONFjUyVN9OX5.jpg"
-    },
-    {
-      "id": 3,
-      "title": "Ghostbusters: Frozen Empire",
-      "description": "After the original team developed a top-secret research laboratory to take the shattered ghosts to the next level. But when the discovery of an ancient artifact unleashes a...",
-      "rating": "6.7+",
-      "views": 2450,
-      "image": "https://www.themoviedb.org/t/p/w1280/5cCfqeUH2f5Gnu7Lh9xepY9TB6x.jpg"
-    }
+  {
+    "id": 11,
+    "title": "Corrective Measures",
+    "tagline": "Justice has a new address.",
+    "image": "https://image.tmdb.org/t/p/original/aHFq9NMhavOL0jtQvmHQ1c5e0ya.jpg",
+    "backdrop": "https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces/i6u0xPuFLAxdELBxUit75fyBqlq.jpg",
+    "rating": 5.3,
+    "views": 8900,
+    "duration": "1h 38m",
+    "description": "Set in San Tiburon, the world's most dangerous maximum-security penitentiary and home to the world's most treacherous superpowered criminals, where tensions among the inmates and staff heighten, leading to anarchy that engulfs the prison and order is turned upside down.",
+    "status": "Released",
+    "releaseDate": "April 26th 2022",
+    "revenue": "0",
+    "director": "Sean McNamara",
+    "writer": "Brendan Cowles, Shane Cowles",
+    "cast": [
+      {
+        "id": 1011,
+        "name": "Bruce Willis",
+        "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/w3aXr1e7gQCn8MSp1vW4sXHn99P.jpg"
+      },
+      {
+        "id": 1022,
+        "name": "Michael Rooker",
+        "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/ngOuHNIAGrKyY1O7F0f9C5Q9ONg.jpg"
+      },
+      {
+        "id": 1033,
+        "name": "Hayley Sales",
+        "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/uav9kss6K3LsevFS3OcWytskSec.jpg"
+      },
+      {
+        "id": 1044,
+        "name": "Brennan Mejia",
+        "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/r6gyUjal5YYTBgg2SRIb1Euh4TK.jpg"
+      }
+    ],
+    "similarMovies": [
+      {
+        "id": 201,
+        "title": "The Last Stand",
+        "poster": "https://image.tmdb.org/t/p/w500/6Jp3rYkTjKqZ7h5V4Q9X8Y6Z2W1.jpg"
+      },
+      {
+        "id": 202,
+        "title": "Assassin's Bullet",
+        "poster": "https://image.tmdb.org/t/p/w500/7Kp3rYkTjKqZ7h5V4Q9X8Y6Z2W2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Iron Man",
+    "tagline": "Heroes aren't born. They're built.",
+    "image": "https://www.themoviedb.org/t/p/original/cyecB7godJ6kNHGONFjUyVN9OX5.jpg",
+    "backdrop": "https://www.themoviedb.org/t/p/original/cyecB7godJ6kNHGONFjUyVN9OX5.jpg",
+    "rating": 8.0,
+    "views": 12300,
+    "duration": "2h 6m",
+    "description": "Tony Stark. Genius, billionaire, playboy, philanthropist. After being held captive in an Afghan cave, Tony creates a unique suit of armor to escape. Back home, he refines the suit and uses it to fight crime and terrorism.",
+    "status": "Released",
+    "releaseDate": "May 2nd 2008",
+    "revenue": "585366247",
+    "director": "Jon Favreau",
+    "writer": "Mark Fergus, Hawk Ostby, Art Marcum, Matt Holloway",
+    "cast": [
+      {
+        "id": 201,
+        "name": "Robert Downey Jr.",
+        "image": "https://image.tmdb.org/t/p/w100_and_h100_face/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg"
+      },
+      {
+        "id": 202,
+        "name": "Gwyneth Paltrow",
+        "image": "https://image.tmdb.org/t/p/w100_and_h100_face/7kRJtR2UQjJ6yq5q5q5q5q5q5q5.jpg"
+      },
+      {
+        "id": 203,
+        "name": "Jeff Bridges",
+        "image": "https://image.tmdb.org/t/p/w100_and_h100_face/8kRJtR2UQjJ6yq5q5q5q5q5q5q6.jpg"
+      }
+    ],
+    "similarMovies": [
+      {
+        "id": 301,
+        "title": "Iron Man 2",
+        "poster": "https://www.themoviedb.org/t/p/w500/6WBeq4fCd36OkevKzZG9m7p5q5q.jpg"
+      },
+      {
+        "id": 302,
+        "title": "The Avengers",
+        "poster": "https://www.themoviedb.org/t/p/w500/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "title": "Ghostbusters: Frozen Empire",
+    "tagline": "The next chapter is ice cold.",
+    "image": "https://www.themoviedb.org/t/p/w1280/5cCfqeUH2f5Gnu7Lh9xepY9TB6x.jpg",
+    "backdrop": "https://www.themoviedb.org/t/p/original/5cCfqeUH2f5Gnu7Lh9xepY9TB6x.jpg",
+    "rating": 6.7,
+    "views": 2450,
+    "duration": "1h 55m",
+    "description": "After the original team developed a top-secret research laboratory to take the shattered ghosts to the next level. But when the discovery of an ancient artifact unleashes a powerful evil force, the Spengler family and the original Ghostbusters must team up to save the world.",
+    "status": "Released",
+    "releaseDate": "March 22nd 2024",
+    "revenue": "200000000",
+    "director": "Gil Kenan",
+    "writer": "Gil Kenan, Jason Reitman",
+    "cast": [
+      {
+        "id": 301,
+        "name": "Paul Rudd",
+        "image": "https://image.tmdb.org/t/p/w100_and_h100_face/5YtYhO49MbCpYQO4yQvKQbOjK3Z.jpg"
+      },
+      {
+        "id": 302,
+        "name": "Carrie Coon",
+        "image": "https://image.tmdb.org/t/p/w100_and_h100_face/6YtYhO49MbCpYQO4yQvKQbOjK3Y.jpg"
+      },
+      {
+        "id": 303,
+        "name": "Bill Murray",
+        "image": "https://image.tmdb.org/t/p/w100_and_h100_face/7YtYhO49MbCpYQO4yQvKQbOjK3X.jpg"
+      }
+    ],
+    "similarMovies": [
+      {
+        "id": 401,
+        "title": "Ghostbusters: Afterlife",
+        "poster": "https://www.themoviedb.org/t/p/w500/7Rz5Qj7J6yq5q5q5q5q5q5q5q5q.jpg"
+      },
+      {
+        "id": 402,
+        "title": "Ghostbusters (1984)",
+        "poster": "https://www.themoviedb.org/t/p/w500/8Rz5Qj7J6yq5q5q5q5q5q5q5q5r.jpg"
+      }
+    ]
+  }
 ]

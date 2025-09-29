@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Banner.css';
 
 const Banner = ({ banners }) => {
+  const navigate = useNavigate();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(true); 
 
@@ -35,6 +37,11 @@ const Banner = ({ banners }) => {
     }, 300);
   };
 
+  const handleInfoClick = () => {
+    const currentBanner = banners[currentIndex];
+    navigate(`/movie/${currentBanner.id}`); 
+  };
+
   const currentBanner = banners[currentIndex];
 
   return (
@@ -52,7 +59,7 @@ const Banner = ({ banners }) => {
             <span>|</span>
             <span>View: {currentBanner.views}</span>
           </div>
-          <button className="play-button">Info</button>
+          <button className="play-button" onClick={handleInfoClick}>Info</button>
         </div>
 
         <button className="nav-button prev" onClick={handlePrev}>
