@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { createPortal } from 'react-dom'; 
 import './MovieDetail.css';
 import MovieCard from './MovieCard';
+import { Modal } from './Modal';
 
 import banners from '../data/banners.json';
 import topRatedMovies from '../data/topRatedMovies.json';
@@ -13,6 +15,7 @@ const MovieDetail = () => {
   const { id } = useParams();
   const movieId = parseInt(id, 10);
   const movie = allMovies.find(m => m.id === movieId);
+  const [isModalOpen, setIsModalOpen] = useState(false); // 👈 состояние модалки
 
   if (!movie) {
     return (
@@ -21,6 +24,16 @@ const MovieDetail = () => {
       </div>
     );
   }
+
+
+  const handlePlayNowClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = (message) => {
+    console.log(message); // можно удалить
+    setIsModalOpen(false);
+  };
 
   const cast = movie.cast || [];
   const tagline = movie.tagline || '';
@@ -47,7 +60,10 @@ const MovieDetail = () => {
       <div className="movie-content">
         <div className="movie-poster-section">
           <img src={poster} alt={movie.title} className="movie-poster" />
-          <button className="play-now-button">Play Trailer</button>
+          <button 
+            className="play-now-button"
+            onClick={handlePlayNowClick}
+          >Play Trailer</button>
         </div>
 
         <div className="movie-info">
@@ -94,6 +110,16 @@ const MovieDetail = () => {
           )}
         </div>
       </div>
+
+      {isModalOpen &&
+        createPortal(
+          <Modal
+            closeModal={handleCloseModal}
+            trailerUrl={movie.trailerUrl || "https://www.youtube.com/embed/dQw4w9WgXcQ"}
+            title={`${movie.title} | Official Trailer`}
+          />,
+          document.body
+        )}
     </div>
   );
 };

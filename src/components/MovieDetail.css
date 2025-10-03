@@ -3,8 +3,10 @@
   min-height: 100vh;
   color: white;
   padding-top: 80px; 
-  background-color: #121212;
-  z-index: -2;
+}
+
+.movie-title {
+  font-size: 3rem;
 }
 
 .movie-backdrop {
