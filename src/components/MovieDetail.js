@@ -47,7 +47,7 @@ const MovieDetail = () => {
       <div className="movie-content">
         <div className="movie-poster-section">
           <img src={poster} alt={movie.title} className="movie-poster" />
-          <button className="play-now-button">Play Now</button>
+          <button className="play-now-button">Play Trailer</button>
         </div>
 
         <div className="movie-info">

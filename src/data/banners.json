@@ -14,6 +14,7 @@
     "revenue": "0",
     "director": "Sean McNamara",
     "writer": "Brendan Cowles, Shane Cowles",
+    "trailerUrl": "https://www.youtube.com/embed/BpP4zneiyVI?si=ZiCsnSHEbjnyvAYc",
     "cast": [
       {
         "id": 1011,
@@ -34,6 +35,11 @@
         "id": 1044,
         "name": "Brennan Mejia",
         "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/r6gyUjal5YYTBgg2SRIb1Euh4TK.jpg"
+      },
+      {
+        "id": 1055,
+        "name": "Tom Cavanagh",
+        "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/ySArFxNLO43QJsWBUQ9I85TmnqW.jpg"
       }
     ]
   },
@@ -41,6 +47,7 @@
     "id": 22,
     "title": "Iron Man",
     "tagline": "Heroes aren't born. They're built.",
+    "poster": "https://www.themoviedb.org/t/p/w1280/78lPtwv72eTNqFW9COBYI0dWDJa.jpg",
     "image": "https://www.themoviedb.org/t/p/original/cyecB7godJ6kNHGONFjUyVN9OX5.jpg",
     "backdrop": "https://www.themoviedb.org/t/p/original/cyecB7godJ6kNHGONFjUyVN9OX5.jpg",
     "rating": 8.0,
@@ -52,21 +59,37 @@
     "revenue": "585366247",
     "director": "Jon Favreau",
     "writer": "Mark Fergus, Hawk Ostby, Art Marcum, Matt Holloway",
+    "trailerUrl": "https://www.youtube.com/embed/8ugaeA-nMTc?si=lexC5GOxWt9YIA7m",
     "cast": [
       {
         "id": 2011,
         "name": "Robert Downey Jr.",
-        "image": "https://image.tmdb.org/t/p/w100_and_h100_face/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg"
+        "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg"
       },
       {
         "id": 2022,
-        "name": "Gwyneth Paltrow",
-        "image": "https://image.tmdb.org/t/p/w100_and_h100_face/7kRJtR2UQjJ6yq5q5q5q5q5q5q5.jpg"
+        "name": "Terrence Howard",
+        "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/wXWt2NSY23v7DHe2yZQ1C8TikBp.jpg"
       },
       {
         "id": 2033,
         "name": "Jeff Bridges",
-        "image": "https://image.tmdb.org/t/p/w100_and_h100_face/8kRJtR2UQjJ6yq5q5q5q5q5q5q6.jpg"
+        "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/xms1RAY6q7Lzp7wNeRCB0kzhucn.jpg"
+      },
+      {
+        "id": 2044,
+        "name": "Gwyneth Paltrow",
+        "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/kvk2UXWO45pQWlbErtotK3npHNP.jpg"
+      },
+      {
+        "id": 2055,
+        "name": "Faran Tahir",
+        "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/dMsD7h6KiZ5dM0f9MegXUOKnqb0.jpg"
+      },
+      {
+        "id": 2066,
+        "name": "Clark Gregg",
+        "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/7t2uHG5m4CN2lyYnGfZO54Hn3O0.jpg"
       }
     ]
   },
@@ -85,21 +108,32 @@
     "revenue": "200000000",
     "director": "Gil Kenan",
     "writer": "Gil Kenan, Jason Reitman",
+    "trailerUrl": "https://www.youtube.com/embed/k_6CbpF2FSk?si=K61SZGGfqhnv68ap",
     "cast": [
       {
         "id": 3011,
         "name": "Paul Rudd",
-        "image": "https://image.tmdb.org/t/p/w100_and_h100_face/5YtYhO49MbCpYQO4yQvKQbOjK3Z.jpg"
+        "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/6jtwNOLKy0LdsRAKwZqgYMAfd5n.jpg"
       },
       {
         "id": 3022,
         "name": "Carrie Coon",
-        "image": "https://image.tmdb.org/t/p/w100_and_h100_face/6YtYhO49MbCpYQO4yQvKQbOjK3Y.jpg"
+        "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/vWChiHhXFjZVKC6HbACyyRFmdW4.jpg"
       },
       {
         "id": 3033,
-        "name": "Bill Murray",
-        "image": "https://image.tmdb.org/t/p/w100_and_h100_face/7YtYhO49MbCpYQO4yQvKQbOjK3X.jpg"
+        "name": "Finn Wolfhard",
+        "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/5OVmquAk0W5BIsRlVKslEP497JD.jpg"
+      },
+      {
+        "id": 3044,
+        "name": "Kumail Nanjiani",
+        "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/9EyrK1Cv7ey1h1GgmsVAOn45w6G.jpg"
+      },
+      {
+        "id": 3055,
+        "name": "Patton Oswalt",
+        "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/ljQvjbPmcIAl205Lb2Mu4CW8WO7.jpg"
       }
     ]
   }
