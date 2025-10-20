@@ -1,0 +1,15 @@
+/* src/pages/ProfilePage.css */
+.profile-page {
+  padding: 60px 20px;
+  background-color: #121212;
+  color: white;
+  text-align: center;
+}
+
+.profile-page h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #FF8C00, #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

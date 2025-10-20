@@ -1,0 +1,9 @@
+/* src/pages/AuthPage.css */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #0A0A0A;
+  padding: 20px;
+}
