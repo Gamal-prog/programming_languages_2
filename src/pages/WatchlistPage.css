@@ -1,0 +1,30 @@
+/* WatchlistPage.css */
+.watchlist-page {
+  padding: 60px 20px;
+  background-color: #121212;
+  color: white;
+}
+
+.watchlist-page h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #FFD700;
+}
+
+.watchlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+  .watchlist-page {
+    padding: 40px 10px;
+  }
+
+  .watchlist-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+}

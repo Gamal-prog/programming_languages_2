@@ -1,15 +1,244 @@
-/* src/pages/ProfilePage.css */
+/* ProfilePage.css */
 .profile-page {
-  padding: 60px 20px;
   background-color: #121212;
   color: white;
+  padding: 0;
+  padding-top: 70px;
+}
+
+/* Баннер */
+.profile-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1920x400?text=Profile+Banner') no-repeat center;
+  background-size: cover;
+  padding: 40px 60px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.avatar-circle {
+  width: 120px;
+  height: 120px;
+  background: #FFA500;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.profile-info p {
+  margin: 5px 0 0 0;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.profile-stats {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: auto;
+}
+
+.stat-item {
   text-align: center;
 }
 
-.profile-page h1 {
-  font-size: 2.5rem;
-  background: linear-gradient(90deg, #FF8C00, #FFD700);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFD700;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+.stat-separator {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+/* Вкладки */
+.profile-tabs {
+  display: flex;
+  gap: 20px;
+  padding: 20px 60px;
+  background: #1e1e1e;
+  border-bottom: 1px solid #333;
+}
+
+.tab-link {
+  color: #ccc;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: color 0.2s;
+}
+
+.tab-link:hover,
+.tab-link.active {
+  color: #FFD700;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Контент */
+.profile-content {
+  padding: 40px 60px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 15px;
+}
+
+.section-header h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.filters {
+  display: flex;
+  gap: 20px;
+  font-size: 0.9rem;
+}
+
+.sort-options {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.watchlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.watchlist-card {
+  background: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+}
+
+.watchlist-poster {
+  width: 80px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.watchlist-info {
+  flex: 1;
+}
+
+.watchlist-info h3 {
+  margin: 0 0 5px 0;
+  font-size: 1rem;
+}
+
+.watchlist-info p {
+  margin: 0;
+  color: #ccc;
+  font-size: 0.8rem;
+}
+
+.watchlist-actions {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.action-button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  transition: background 0.2s;
+}
+
+.action-button:hover {
+  background: #444;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+  .profile-banner {
+    padding: 30px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-header {
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .avatar-circle {
+    width: 80px;
+    height: 80px;
+    font-size: 1.5rem;
+  }
+
+  .profile-stats {
+    margin-left: 0;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .profile-tabs {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .profile-content {
+    padding: 30px 20px;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .watchlist-card {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .watchlist-poster {
+    width: 100%;
+    height: 150px;
+  }
+
+  .watchlist-actions {
+    justify-content: space-between;
+  }
 }

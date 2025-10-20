@@ -4,6 +4,7 @@ import { createPortal } from 'react-dom';
 import './MovieDetail.css';
 import MovieCard from './MovieCard';
 import { Modal } from './Modal';
+import WatchlistButton from './WatchlistButton'; 
 
 import banners from '../data/banners.json';
 import topRatedMovies from '../data/topRatedMovies.json';

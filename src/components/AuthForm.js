@@ -1,11 +1,15 @@
 // src/components/AuthForm.js
 import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { login, register } from '../store/authSlice';
 import './AuthForm.css';
 
-const AuthForm = ({ isLogin, onSwitch, onSubmit }) => {
+const AuthForm = ({ isLogin, onSwitch }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const dispatch = useDispatch();
+  const error = useSelector(state => state.auth.error);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -13,12 +17,18 @@ const AuthForm = ({ isLogin, onSwitch, onSubmit }) => {
       alert('Passwords do not match!');
       return;
     }
-    onSubmit(email);
+    if (isLogin) {
+      dispatch(login(email, password));
+    } else {
+      dispatch(register(email, password));
+    }
   };
 
   return (
     <form className="auth-form" onSubmit={handleSubmit}>
       <h2>{isLogin ? 'Вход' : 'Регистрация'}</h2>
+
+      {error && <p className="error">{error}</p>}
 
       <div className="form-group">
         <input
@@ -58,11 +68,7 @@ const AuthForm = ({ isLogin, onSwitch, onSubmit }) => {
 
       <p className="switch-mode">
         {isLogin ? 'Нет аккаунта?' : 'Уже есть аккаунт?'}
-        <button
-          type="button"
-          className="switch-link"
-          onClick={onSwitch}
-        >
+        <button type="button" className="switch-link" onClick={onSwitch}>
           {isLogin ? 'Регистрация' : 'Вход'}
         </button>
       </p>
