@@ -1,41 +1,41 @@
 # Главная страница веб сайта о кинофильмах 
 
-![image](./website-page.png)
+![image](./y/website-page.png)
 
 ### Высоко оцененные фильмы
 
-![image](./top-movies.png)
+![image](./y/top-movies.png)
 
 ### Подвал сайта
 
-![image](./footer.png)
+![image](./y/footer.png)
 
 ### Страница с подробной информацией
 
-![image](./detail.png)
+![image](./y/detail.png)
 
 #### Просмотр трейлера на стр. с подробной инфо
 
-![image](./modal.png)
+![image](./y/modal.png)
 
 ### Регистрация и Авторизация
 
-![image](./register.png)
+![image](./y/register.png)
 
 <br>
 
-![image](./login.png)
+![image](./y/login.png)
 
 ### Избранные 
 
 #### Добавление в избранное
 
-![image](./cardsave.png)
+![image](./y/cardsave.png)
 
 #### Профиль пользователя 
 
-![image](./start.png)
+![image](./y/start.png)
 
 <br>
 
-![image](./end.png)
+![image](./y/end.png)
